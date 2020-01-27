@@ -7,6 +7,7 @@
     <Description>在使用 D.Infrastructures.Application 构建应用的过程中，可以同时使用 autofac 作为依赖注入的容器。</Description>
     <RepositoryUrl>https://github.com/AlgerDu/D.Util</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <Version>3.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
