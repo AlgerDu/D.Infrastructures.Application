@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Extensions\D.Extensions.Application.Autofac\D.Extensions.Application.Autofac.csproj" />
-    <ProjectReference Include="..\..\Infrastructures\D.Infrastructures.Application\D.Infrastructures.Application.csproj" />
+    <ProjectReference Include="..\..\Src\D.Extensions.Application.Autofac\D.Extensions.Application.Autofac.csproj" />
+    <ProjectReference Include="..\..\Src\D.Infrastructures.Application\D.Infrastructures.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
