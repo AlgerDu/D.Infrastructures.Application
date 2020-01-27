@@ -16,7 +16,7 @@ namespace D.Examples.App.Console
             var app = new ApplicationBuilder()
                 .ConfigureAppConfiguration((hostingContext, config) =>
                 {
-                    config.SetBasePath(Directory.GetCurrentDirectory());
+                    config.SetBasePath(hostingContext.Environment.AppRootPath);
 
                     config.AddJsonFile("appSettings.json", optional: false, reloadOnChange: true);
                 })
