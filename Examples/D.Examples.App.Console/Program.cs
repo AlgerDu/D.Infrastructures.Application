@@ -20,8 +20,9 @@ namespace D.Examples.App.Console
 
                     config.AddJsonFile("appSettings.json", optional: false, reloadOnChange: true);
                 })
-                .ConfigureLogging(logging =>
+                .ConfigureLogging((hostingContext, logging) =>
                 {
+                    logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
                     logging.AddConsole();
                 })
                 .UseStartupWithAutofac<Startup>()
